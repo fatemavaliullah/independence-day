@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>India's Independence Day</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@700;ital,wght@600&family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+        body {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            background: url('images/flag_bg.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .heading {
+            font-family: 'Lora', serif;
+            /* Classy font */
+            font-size: 3em;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            margin: 20px 0;
+            color: #d6336c;
+            /* Default color for fallback */
+        }
+
+        .heading .happy {
+            color: #ff9933;
+            /* Orange */
+        }
+
+        .heading .independence {
+            color: #0000ff;
+            /* Blue */
+        }
+
+        .heading .day {
+            color: #138808;
+            /* Green */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            height: calc(100vh - 60px);
+            /* Adjust height to leave space for heading */
+            align-items: center;
+        }
+
+        .flag,
+        .emblem {
+            width: 25%;
+            height: auto;
+            cursor: pointer;
+            object-fit: contain;
+        }
+
+        .flag {
+            height: 60%;
+            /* Adjusted height */
+        }
+
+        .emblem {
+            height: 60%;
+            /* Adjusted height */
+        }
+
+        .slogans {
+            width: 50%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slogans-wrapper {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            animation: scroll 20s linear infinite;
+            /* Increased speed */
+            width: 100%;
+        }
+
+        .slogans p {
+            font-size: 1.3em;
+            /* Increased font size */
+            font-weight: bold;
+            /* Make text bold */
+            font-style: italic;
+            /* Italic style */
+            margin: 30px 0;
+            /* Increased space between slogans */
+            text-align: center;
+            color: #d6336c;
+            /* Dark color between red and pink */
+        }
+
+        .slogans .author {
+            font-weight: normal;
+            /* Normal weight for the author's name */
+            font-size: 1em;
+            /* Slightly smaller font size for the author's name */
+            color: #d6336c;
+            /* Dark color between red and pink */
+            display: block;
+            /* Ensure the author name is on a new line */
+            margin-top: 5px;
+            /* Space between slogan and author name */
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        .buttons {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            /* Space between the boxes */
+        }
+
+        .button {
+            width: 80%;
+            height: 60px;
+            border: none;
+            cursor: pointer;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            line-height: 60px;
+            /* Center text vertically */
+            color: #fff;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        .button.orange {
+            background-color: #ff9933;
+            /* Orange */
+        }
+
+        .button.white {
+            background-color: #ffffff;
+            /* White */
+            color: #000;
+            /* Black text */
+        }
+
+        .button.green {
+            background-color: #138808;
+            /* Green */
+        }
+
+        .button:hover {
+            opacity: 0.8;
+            /* Slight opacity on hover */
+        }
+
+        .songs-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 1em;
+            text-align: center;
+            color: #751538;
+            /* Dark color between red and pink */
+            margin-bottom: 10px;
+            /* Space between the heading and buttons */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <span class="happy">HAPPY</span>
+        <span class="independence">INDEPENDENCE</span>
+        <span class="day">DAY</span>
+    </div>
+
+    <div class="container">
+        <img src="images/flag.avif" alt="Indian Flag" class="flag">
+
+        <div class="slogans">
+            <div class="slogans-wrapper">
+                <p>"Inquilab Zindabad!"<br><span class="author">- Bhagat Singh</span></p>
+                <p>"Vande Mataram!"<br><span class="author">- Bankim Chandra Chatterjee</span></p>
+                <p>"Swaraj is my birthright and I shall have it!"<br><span class="author">- Bal Gangadhar Tilak</span>
+                </p>
+                <p>"Jai Hind!"<br><span class="author">- Subhas Chandra Bose</span></p>
+                <p>"Give me blood, and I shall give you freedom!"<br><span class="author">- Subhas Chandra Bose</span>
+                </p>
+                <p>"Sarfaroshi ki tamanna ab hamare dil mein hai"<br><span class="author">- Ram Prasad Bismil</span></p>
+                <p>"Tum Mujhe Khoon Do, Main Tumhe Azadi Dunga"<br><span class="author">- Subhas Chandra Bose</span></p>
+                <p>"Satyamev Jayate"<br><span class="author">- Madan Mohan Malviya</span></p>
+                <p>"Karo ya Maro"<br><span class="author">- Mahatma Gandhi</span></p>
+                <p>"Jai Jawan Jai Kisan"<br><span class="author">- Lal Bahadur Shastri</span></p>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="songs-heading">CLICK BUTTONS TO HEAR: </div>
+            <button class="button orange" onclick="toggleSong('orange')">Orange (Maa Tujhe Salam)</button>
+            <button class="button white" onclick="toggleSong('white')">White (Jana Gana Mana)</button>
+            <button class="button green" onclick="toggleSong('green')">Green (Sare Jahan se Acha)</button>
+        </div>
+
+        <img src="images/emblem.jpg" alt="Emblem" class="emblem">
+    </div>
+
+    <script>
+        // Object to keep track of the audio elements
+        const audioElements = {
+            orange: new Audio('audio/orange.mp4'),
+            white: new Audio('audio/white.mp4'),
+            green: new Audio('audio/green.mp4')
+        };
+
+        // Object to keep track of the playing state
+        const playingState = {
+            orange: false,
+            white: false,
+            green: false
+        };
+
+        function toggleSong(color) {
+            const audio = audioElements[color];
+            if (playingState[color]) {
+                audio.pause();
+                audio.currentTime = 0; // Reset the audio to start
+                playingState[color] = false;
+            } else {
+                // Pause any other currently playing audio
+                for (let key in playingState) {
+                    if (key !== color && playingState[key]) {
+                        audioElements[key].pause();
+                        audioElements[key].currentTime = 0;
+                        playingState[key] = false;
+                    }
+                }
+                audio.play();
+                playingState[color] = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
